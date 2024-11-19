@@ -45,7 +45,7 @@ const testimonials = [
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slidesToShow, setSlidesToShow] = useState(3); // Default to 3 slides
-  const [carouselWidth, setCarouselWidth] = useState(0);
+  const [carouselWidth, setCarouselWidth] = useState<string>('');
 
   const totalSlides = testimonials.length;
   const slideWidth = 100 / slidesToShow;
